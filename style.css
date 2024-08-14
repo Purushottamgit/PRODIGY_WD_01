@@ -1,0 +1,68 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set global font and background */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    margin-top: 80px; /* To avoid content being hidden under the fixed navbar */
+}
+
+#home { background-color: #ff5733; }
+#about { background-color: #33b5ff; }
+#services { background-color: #85ff33; }
+#contact { background-color: #ff33f6; }
+
+/* Navbar color change on scroll */
+.navbar.scrolled {
+    background-color: #555;
+}
+
+/* Extra styles for hover effect */
+.navbar ul li a:hover {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
